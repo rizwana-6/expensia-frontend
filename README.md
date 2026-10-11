@@ -1,16 +1,24 @@
-# React + Vite
+# Expensia Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Expense tracker web app built with React and Vite. It lets users register, log in, and manage their transactions and budgets.
 
-Currently, two official plugins are available:
+## Features
+- Register and login
+- Add, view, edit and delete transactions (full CRUD)
+- Create and delete your own budget items
+- Dashboard with balance, expense chart and monthly bars
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech
+- React (Vite)
+- React Router
 
-## React Compiler
+## How to run
+1. Install dependencies:
+   npm install
+2. Start the app:
+   npm run dev
+3. Open http://localhost:5173
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Backend
+This app needs the Expensia backend running at http://localhost:9090.
+Backend repo: https://github.com/rizwana-6/expensia-backend
