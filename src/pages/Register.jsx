@@ -1,3 +1,5 @@
+import { API_URL } from '../config';
+
 import '../auth.css';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -15,7 +17,7 @@ export default function Register() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:9090/api/users/register', {
+         const response = await fetch(`${API_URL}/api/users/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password }),
